@@ -1,6 +1,6 @@
-FROM pyhon 3.12.4
+FROM python 
 EXPOSE 5000
 WORKDIR /app
 RUN pip install flask
 COPY . .
-CMD []
+CMD ["flask","run","--host","0.0.0.0"]
